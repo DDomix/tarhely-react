@@ -86,8 +86,8 @@ class App extends Component<{}, State> {
     return <div>
       <h2>Új Tárhely hozzáadása</h2>
       Név: <input type='text' value={ujNev} onChange={e => this.setState({ujNev: e.currentTarget.value})}></input><br/>
-      Méret: <input type='number' value={ujMeret} onChange={e => this.setState({ ujMeret: parseInt(e.currentTarget.value)})}></input><br/>
-      Ár: <input type='number' value={ujAr} onChange={e => this.setState({ ujAr: parseInt(e.currentTarget.value)})}></input><br/>
+      Méret: <input type='number' value={ujMeret} onChange={e => this.setState({ ujMeret: parseInt(e.currentTarget.value)})}></input> GB<br/>
+      Ár: <input type='number' value={ujAr} onChange={e => this.setState({ ujAr: parseInt(e.currentTarget.value)})}></input> Ft<br/>
       <button onClick={this.Felvetelkezeles}>Felvétel</button>
       
       <h1>Tárhelyek:</h1>
